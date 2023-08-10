@@ -1,44 +1,158 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>About Me</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="profile-picture">
-          <img src="profile-picture.jpg" alt="Profile Picture">
-        </div>
-        <h1>My Name</h1>
-        <p>Web Developer</p>
-        <nav>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="reflection.html">Reflection</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<!-- HTML File Author: Tom Sargent
+Author email: tom.sargent@student.curtin.edu.au
+Date: 18/04/2023 -->
 
-    <!-- About Page Content -->
-    <section>
-      <div class="container">
-        <h2>About Me</h2>
-        <p>My education, work experience, skills, and interests.</p>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 My Name</p>
-      </div>
-    </footer>
-  </body>
+<!DOCTYPE html> <!-- Define the document type as HTML -->
+<html lang="en"><!-- Define the document language as English -->
+<head>
+	<meta charset="UTF-8"> <!-- Define the character encoding as UTF-8 -->
+	<!-- The following was adapted from Michael Borck's Business Web and Mobile Style Guide (Blackboard)-->
+	<meta name="description" content="A Personal Portfolio For Tom Sargent, A New Web Designer"> 
+	<meta name="keywords" content="web technologies, web design, web skills, HTML5, CSS"> 
+	<meta name="author" content="Tom Sargent">
+	<title>About | Tom Sargent</title> <!-- Define the page title -->
+	<link rel="stylesheet" type="text/css" href="/styles/about.css"> <!-- Link t the style sheet in the styles folder (CSS) -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body> <!-- Define the page body -->
+	<header> <!-- Define the page header -->
+		<nav> <!-- Define the page navigation bar -->
+			<div class="name"> <!-- create a div with the class "name" -->
+				<a href="index.html">Tom Sargent | A Personal Portfolio</a> <!-- Make a header title, that is linked to index.html -->
+			  </div>
+			<!-- I Learnt the JS for how to build a hamburger menu for mobile view from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+			When I didn't understand something, i then asked ChatGPT for help to explain https://chat.openai.com/ -->
+			<button class="menu-btn"> <!-- Define the menu button class for the CSS/JS associated with mobile Menu-->
+			<img src="images/menu.png" alt="Menu icon"> <!-- Define the image location for the menu item (with alt text)-->
+			</button>
+			<ul class="nav-links"> <!-- Create an unordered list for the navigation links -->
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="projects.html">Portfolio</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="reflection.html">Reflection</a></li>
+			</ul>
+		  </nav>
+	</header>
+  <section id="banner">
+		<h2>Learn About Me!</h2>
+		<p>A Business Infomation Systems and Technology Student at Curtin University</p>
+	</section>
+  <section id="about"> <!-- I copied this section from my homepage, in case the user lands here before the home from google -->
+		<h2>Hi! I am Tom</h2>
+		<img src="/images/2.jpg" alt="Profile picture">
+		<p>Hi! My name is Tom Sargent. I am a 3rd Year Commerce Student majoring in Business Information systems and Technology. I am a highly motivated and accomplished Bachelor of Commerce student at Curtin
+			University, specializing in Business Information Technology and Information Systems. Over
+			the past 4+ years, I have honed my skills in sales and business IT strategy & deployment,
+			working closely with small businesses across Western Australia to implement effective IT
+			systems and improve their overall efficiency.
+			Throughout my career, I have demonstrated a strong track record of exceptional
+			communication, organization, and leadership skills, which have enabled me to exceed sales
+			targets, manage IT projects, and deliver tangible results. I am passionate about using
+			technology to drive positive change and foster productivity across a wide range of
+			industries, and I am constantly seeking out new opportunities to learn, develop, and grow in
+			this dynamic field.
+			Whether working independently or as part of a team, I am committed to delivering high quality work that meets or exceeds the expectations of my clients and colleagues. I am a
+			positive, enthusiastic, and dedicated individual who thrives on challenge and is constantly
+			seeking out new ways to improve and innovate. With a strong work ethic, a passion for
+			technology, and a commitment to excellence, I am confident that I have the skills,
+			experience, and drive to excel in any IT-related role.</p>
+	</section>
+    <section id="skills"> <!-- The following code is to create a list of my skills that I will style creatively in CSS -->
+		<h2>My Skills</h2>
+		<ul>
+			<li>Information Systems</li> <!-- List Item -->
+			<li>Project Management</li>
+			<li>Information Technology</li>
+			<li>Web Design</li>
+			<li>POS Systems</li>
+			<li>Network Management</li>
+			<li>Business Process Management</li>
+			<li>Power BI and Analytics</li>
+		</ul>
+	</section>
+	<!-- The following series of sections design, HTML and layout where adapted from resources at various sources including:
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+	https://www.w3schools.com/howto/howto_website_create_portfolio.asp
+	https://chat.openai.com/
+	As well as my own experience to date in coding -->
+  <section class="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <img class="school-logo" src="images/helena.png" alt="High School Logo">
+      <h3>High School</h3>
+      <p class="school-name">Helena College Senior School</p>
+      <p class="education-date">Graduated 2020</p>
+      <p class="education-date"> Graduated with an ATAR of 94.95 <br> Achieved SCSA awards for High Distinction</p>
+    </div>
+    <div class="education-item">
+      <img class="school-logo" src="images/curtin.jpg" alt="University Logo">
+      <h3>Bachelor's Degree</h3>
+      <p class="school-name">Curtin University</p>
+      <p class="education-date">Due to Graduate 2023</p>
+      <p class="degree">Bachelor of Commerce (BCom) majoring <br> in Information Systems and Technology</p>
+    </div>
+  </section>
+	<!-- The following series of sections design, HTML and layout where adapted from resources at various sources including:
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+	https://www.w3schools.com/howto/howto_website_create_portfolio.asp
+	https://chat.openai.com/
+	As well as my own experience to date in coding -->
+  <section class="work">
+    <h2>Work Experience</h2>
+    <div class="work-item">
+      <img class="work-logo" src="images/whistlers.jpg" alt="Whistler Chocolate">
+      <h3>Whistler's Chocolate Co</h3>
+      <p class="work-name">Information Technology Consultant</p>
+      <p class="work-date">2015 - Present</p>
+      <p class="work-date">Provisioning of internal Information Systems, <br> POS systems, Web Design & Networking</p>
+    </div>
+    <div class="work-item">
+      <img class="work-logo" src="images/pwc.jpg" alt="PwC">
+      <h3>Price Waterhouse Coopers</h3>
+      <p class="work-name">Information Technology Intern</p>
+      <p class="work-date">2018 - 1 Month</p>
+      <p class="work-date">PLearning from industry experts <br> and working on real IT projects.</p>
+    </div>
+    <div class="work-item">
+      <img class="work-logo" src="images/jb.png" alt="JB Hi-Fi">
+      <h3>JB Hi-Fi</h3>
+      <p class="work-name">Telecommunications Salesperson</p>
+      <p class="work-date">2020 - Present</p>
+      <p class="work-date">Retail sales specifically relating to <br> Telstra CRM/ERP systems and <br> Phone Contracts</p>
+    </div>
+    <div class="work-item">
+      <img class="work-logo" src="images/deloitte.png" alt="Deloitte">
+      <h3>Deloitte</h3>
+      <p class="work-name">Technology Strategy and Transformation Vacationer</p>
+      <p class="work-date">2023 - 1 Month</p>
+      <p class="work-date">Learning from industry experts <br> and working on real IT projects. <br> Offered a Permanent Graduate Role.</p>
+    </div>
+  </section>
+<section id="Interests"> <!-- The following code is to create a list of my interests that I will style creatively in CSS -->
+<h2>My Interests and Hobbies</h2>
+<ul>
+  <li>Information Systems</li>
+  <li>Project Management</li>
+  <li>Information Technology</li>
+  <li>Web Design</li>
+  <li>POS Systems</li>
+  <li>Network Management</li>
+  <li>Business Process Management</li>
+  <li>Power BI and Analytics</li>
+</ul>
+</section>
+<footer>
+	<p>&copy; 2023 Tom Sargent. All rights reserved.</p>
+		<p>Last Updated 18/5/2023</p>
+			<p> <!-- The following CSS Styles approved image and HTML code has been used from http://jigsaw.w3.org/css-validator/check/referer -->
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					<img style="border:0;width:88px;height:31px"
+						src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+						alt="Valid CSS!">
+				</a>	
+	</p>	
+</footer>
+<script src="script.js"></script> <!-- Define the link to the JS file -->
+</body>
 </html>

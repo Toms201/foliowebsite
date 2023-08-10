@@ -1,0 +1,50 @@
+<!-- 
+  HTML Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Bork in Curtin Universities ISYS3004 - Business Web and Mobile Technologies. Semester 1 2023.
+  Description: The HTML for RSS feeder web application when given an RSS link.
+-->
+<!DOCTYPE html>  <!-- This declares the document type as HTML5 -->
+<html lang="en"> <!-- This declares the language as english -->
+<head>
+  <meta charset="UTF-8">  <!-- Define character encoding as UTF-8 -->
+  <title>RSS Reader</title>  <!-- Define Webpage Title -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="Tom Sargent and Michael Borck">
+  <meta name="description" content="A Simple RSS Feeder Web Application">
+  <meta name="keywords" content="RSS, feeder">
+  <link rel='stylesheet' href='css/style.css'> <!-- Link to an external CSS Sheet -->
+</head>
+<body>
+  <header>
+    <h2>RSS Reader</h2> <!-- Second level Heating-->
+    <form> <!-- Create a form to input data -->
+      <input type="text" id="rss-input" placeholder="URL of RSS Feed"> <!-- Create a text input box -->
+      <button type="button" id="add-feed"> <!-- Create a button to add to feed -->
+        Get Articles
+      </button>
+    </form>
+  </header>
+  <main></main>
+  <footer>
+    <!-- Define the image source (src) Width, alternative text for accessible reading and the link to source (href) for the page license-->
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      <img alt="Creative Commons License"
+         src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+    </a><br>
+    This work is licensed under a <br>
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      Creative Commons<br>
+      Attribution 4.0 International License
+    </a>
+    <p> <!-- The following W3C code was provided by W3C CSS validator https://jigsaw.w3.org/css-validator/validator-->
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!">
+        </a>
+      </p>
+  </footer>
+  <script src='js/script.js' defer></script> <!-- Link to Javascript File-->
+</body>
+</html>

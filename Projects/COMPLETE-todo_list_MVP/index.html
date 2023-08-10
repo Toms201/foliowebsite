@@ -1,0 +1,51 @@
+<!-- 
+  HTML Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Bork in Curtin Universities ISYS3004 - Business Web and Mobile Technologies. Semester 1 2023.
+  Description: The HTML for a To-Do List Web Application that can sort taks by active, completed and all, and remember the list in the local storage.
+-->
+<!DOCTYPE html>  <!-- This declares the document type as HTML5 -->
+<html lang="en"> <!-- This declares the language as english -->
+<head>
+  <meta charset="UTF-8">  <!-- Define character encoding as UTF-8 -->
+  <title>My Todo List</title>  <!-- Define Webpage Title -->
+  <meta name="author" content="Michael Borck and Tom Sargent"> <!-- Define Author and Description of site -->
+  <meta name="description" content="Create a To-Do List">
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Link to an external CSS Sheet -->
+</head>
+<body>
+  <h1>My Todo List</h1> <!-- First Heating-->
+  <form>
+    <label> <!-- Create the label for the tasks -->
+      Task Name:
+      <input id="task-input" type="text" placeholder="Do assignment"> <!-- Create the input box with some sample placeholder text-->
+    </label>
+    <button type="button" id="add-task"> <!-- Define a button to be used to add a task to the list -->
+      Add Task
+    </button>
+  </form>
+  <ul id="todo-list"> <!-- Define an unordered list that will become the To-Do List -->
+  </ul>
+  <button type="button" id="show-all">All</button> <!-- Define a filter button-->
+  <button type="button" id="show-active">Active</button> <!-- Define a filter button-->
+  <button type="button" id="show-completed">Complete</button> <!-- Define a filter button-->
+  <script type="text/template" id="list-item-template"> <!-- Define some js script to be interted from the js file-->
+    <li class="task"> <!-- Create the list task item to be added by the js code -->
+      <label>
+        <input class="checkbox" type="checkbox"> <!-- Add a checkbox to a list item -->
+        <span class="task-name"><!-- TASK_NAME --></span> <!-- IMPORTANT - The TaskName here as a comment will be refered to in the js file -->
+      </label>
+    </li>
+  </script>
+  <script src="js/script.js"></script>
+  <footer>
+    <p> <!-- The following W3C code was provided by W3C CSS validator https://jigsaw.w3.org/css-validator/validator-->
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!">
+      </a>
+    </p>
+</footer>
+</body>
+</html>

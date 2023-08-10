@@ -1,0 +1,86 @@
+<!-- 
+  HTML Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Bork in Curtin Universities ISYS3004 - Business Web and Mobile Technologies. Semester 1 2023.
+  Description: A basic HTML website.
+-->
+<!DOCTYPE html> <!-- This declares the document type as HTML5 -->
+<html lang="en"> <!-- This declares the language as english -->
+<head> <!-- Define header -->
+  <meta charset="UTF-8"> <!-- Define character encoding as UTF-8 -->
+  <title>Web Page Design</title> <!-- Define Webpage Title -->
+  <!-- Link to an external CSS Sheet-->
+  <link rel="Stylesheet" type="text/css" href="style.css"> <!-- Link to an external CSS Sheet -->
+</head>
+<body>
+  <header>
+    <h1>Web Page Design</h1> <!-- First heading/Heading one tag-->
+    <nav> <!-- Define the navigation section-->
+      <a href="about.html">About</a> <!-- the a tag defines a hyperlink, the href attribute indicates the ljnks destination-->
+      <a href="#featured">The Idea</a> <!-- None of these links work in this document as it is a basic demonstration of a HTML Web Homepage (index page)-->
+      <a href="#content">Content</a>
+      <a href="#presentation">Presentation</a>
+      <a href="#extras">Technologies</a>
+    </nav>
+  </header>
+
+  <section id="featured"> <!-- Define the section "featured" -->
+    <h2>The Idea</h2> <!-- This is a h2 tag, for a second level heading -->
+    <p>Okay, so you have an <em>idea</em> <!-- use em to emphasize text --> for a website or an assignment due for
+    Business Web Technologies. You want to make it look professional and easy to
+    use.</p>
+    <p>What is the first thing you need to work on?</p>
+  </section>
+
+  <section id="content">
+    <h2>Content - HTML</h2>
+    <p>The aim of design is to enhance the presentation of the content! Content
+    is the most important element of a website.</p>
+    <p>You should spend time gathering your content, thinking about your layout,
+    and sketching your ideas on paper</p>
+
+    <h2 id="presentation">Presentation - CSS</h2>
+    <p>Styling content will go a long way, for websites we use Cascading Style
+    Sheets (CSS).</p>
+    <p>CSS is a set of rules that allow you to style content. The rules are
+    <em>element:style</em> pairs, which identify the <em>element</em> and how it
+    is to be <em>styled</em>.</p>
+  </section>
+
+  <section id="extras">
+    <h2>Web Tech Used</h2>
+    <h3>HTML5</h3>
+        <!-- Define the image source (src) Width, alternative text for accessible reading and the link to source (href)-->
+
+    <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+    width="60" alt="HTML5 Logo">
+    <p> Image Source: <a href="https://en.wikipedia.org/wiki/HTML5">Wikipedia
+        HTML5 Logo</a> </p>
+    <h3>CSS3</h3>
+    <img
+    src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+    width="50" alt="CSS3 Logo">
+    <p> Image Source: <a
+    href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg">Wikipedia
+    CSS 3 Logo</a> </p>
+  </section>
+
+  <footer> 
+    <!-- Define the footer and licence tags, including CC image, link and alt text -->
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+    alt="Creative Commons License" style="border-width:0"
+    src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work
+    is licensed under a <br><a rel="license"
+    href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+    Attribution 4.0 International License</a>
+    <p> <!-- The following W3C code was provided by W3C CSS validator https://jigsaw.w3.org/css-validator/validator-->
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="Valid CSS!">
+          </a>
+      </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* CSS Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Borck in Curtin Universities ISYS3004 - Business Web and Mobile Technolgoies. Semester 1 2023.
+  Description: A basic CSS file to construct a simple clean layout for HTML file.
+*/
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;  /* center the image */
+    margin-top: 40px; /* move top of page down a little */
+    width: 60%;  /* use 60% of the page, allows element to 'scale' proportionally */
+    background-color: #fff;
+    border: 10px solid #044375;  /* draw a solid boarder around the element */
+    padding: 10px; /* Shorthand for adding padding to each side of 'box':
+        10 top, 10 bottom, 10 left, 10 right.  Basically this means the contents of element
+        are not touching/on/against the boarder */
+}
+
+p { /* lets make sure paragraphs have space around the text and not touching other elements */
+    margin: 2px;
+    padding: 3px;
+}
+
+header {
+    height: 250px;
+
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80"); /* The image used from https://unsplash.com/photos/KMn4VEeEPR8 */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1 {
+    padding: 30px 0 30px 30px;
+    color: black;
+    font-weight: bolder;  /* make text 'bold' */
+    letter-spacing: -1px;  /* stylistic choice, there is a 'lot' you can control with CSS, Google for options */
+}
+
+nav {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background-color: #044375;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 16px;
+}
+
+nav a:hover { 
+    background-color: #ddd;
+    color: black;
+}
+
+#featured {
+    float: left;  /* start at the left */
+    width: 100%;  /* take up the complete 'row' */
+}
+
+#content {
+    float: left;
+    width: 65%;
+}
+
+#extras {
+    float: right;
+    width: 20%;
+    align-content: center;
+}
+
+#extras h2 {
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #eee;
+}
+
+#extras p {
+    font-size: 50%;
+    text-align: center;
+    line-height: normal;
+}
+
+footer {
+    clear: both; /* change back to vertical flow (default) */
+    padding: 10px;
+    background-color: #eee;
+}

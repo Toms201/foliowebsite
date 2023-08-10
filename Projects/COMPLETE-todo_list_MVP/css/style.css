@@ -1,0 +1,24 @@
+/* CSS Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Borck in Curtin Universities ISYS3004 - Business Web and Mobile Technolgoies. Semester 1 2023.
+  Description: A basic CSS file to construct a simple clean layout for HTML file.
+*/
+
+body { /* Define the body style */
+  font-family: helvetica, sans-serif; 
+  font-size: 16px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.task { /* Define the class .task style */
+  list-style: none;
+}
+
+.task.completed { /* Define the class .task.completed style */
+  text-decoration: line-through;
+}
+
+.completed { /* define the class .completed style */
+  text-decoration: line-through;
+}

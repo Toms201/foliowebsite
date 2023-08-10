@@ -1,0 +1,33 @@
+/* CSS Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Borck in Curtin Universities ISYS3004 - Business Web and Mobile Technologies. Semester 1 2023.
+  Description: A basic CSS file to construct a simple Rock paper Scissors game colour/size/spacing.
+*/
+body{ /* Define Body Style */
+    margin:0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 10px solid red;
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.circle{ /* Define class .circle Style */
+    background: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50%;
+    font-size: 65px;
+}
+
+.circle:hover{ /* Define class .circle Style on hover */
+    background-color: gray;
+}
+
+.instruction{ /* Define class .instruction Style */
+    text-align: center;
+    font-size: 60%;
+    
+}

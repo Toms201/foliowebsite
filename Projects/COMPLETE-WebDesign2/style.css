@@ -1,0 +1,81 @@
+/* CSS Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Borck in Curtin Universities ISYS3004 - Business Web and Mobile Technolgoies. Semester 1 2023.
+  Description: A basic CSS file to construct a simple clean layout for HTML file.
+*/
+body {    /* The outermost container, ALL inner elements will 
+    inherit from this styling.  Good place to put defaults, clear
+    ALL margins etc */
+    width: 700px;  /* arbitrary choice, could do %, but px for now */
+    margin: 0 auto;  /* centers the <body> within the page */
+    padding: 0; /* No padding */
+    text-align: center; /* Align text centre */
+    font-family: Helvetica, sans-serif; /* Select font family */
+  }
+  header { /* Style the header section */
+    background-color: lightgray;
+  }
+
+  header h1 { /* Style the h1 (first heading) in the header section tag */
+    height: 80px;
+    line-height: 80px;
+  }
+
+  nav { /* style the navigation bar/menu */
+    background-color: darkgray;
+    text-align: left;
+    padding: 10px;
+  }
+
+  nav a { /* style the navigation bar with tag a (listed link items) */
+    color: white;  /* for consistency, make links the same */
+    text-align: center;
+    padding: 10px 16px; /* top-bottom padding must match <nav> */
+    text-decoration: none;
+  }
+
+  nav a:hover { /* style the navigation bar with tag a (listed link items) when hovered */
+    background-color: lightgray;
+    color: black;
+  }
+
+  #featured { /* style the featured section */
+    background: lightgray;
+    float: left;
+    width: 200px;
+  }
+
+  #content { /* style the content section */
+    float: right;
+    width: 500px;
+  }
+
+  #extras {/* style the extras section */
+    background: lightgray;
+    float: left;
+    width: 200px;
+  }
+
+  #extras p { /* style the paragraph in the extras section */
+    font-size: 50%;
+    text-align: center;
+    line-height: normal;
+  }
+
+  footer { /* style the footer */
+    clear: both;
+    text-align: center;
+    background-color: darkgray;
+  }
+
+  footer a { /* style the a tags in the footer  */
+    color: white;
+    text-decoration: none;
+  }
+
+  /* The following styling is not necessary, just pads a paragraph
+  left and right.  It is a simple way to show how you can make little 
+  design changes to a document. */
+  p {
+    margin: 0 10px 10px;
+  }

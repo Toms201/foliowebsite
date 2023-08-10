@@ -1,0 +1,44 @@
+/* CSS Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Borck in Curtin Universities ISYS3004 - Business Web and Mobile Technolgoies. Semester 1 2023.
+  Description: A basic CSS file to construct a simple clean layout for HTML file.
+*/
+/* Style the top body */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+header {
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+
+}
+
+/* Style the content */
+main {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}

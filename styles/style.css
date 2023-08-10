@@ -1,0 +1,246 @@
+/*
+Description: Contains the styling for Site Branding of the Home Page
+Author: Tom Sargent
+Email: tom.sargent@student.curtin.edu
+Tags: Website, Branding, Colour Palette, css, styling, profile
+*/
+
+/* Reset the default styles of HTML elements */
+/* I learnt about reseting the CSS styles for different browsers when I was doing some research about CSS http://web.simmons.edu/~grovesd/comm244/notes/week4/css-reset#:~:text=We%20reset%20the%20browser%20styles,the%20basic%20styles%20are%20different. */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+	line-height: 1.5;
+	background-color: #50808E;
+}
+
+/* Style the name class */
+.name{
+    font-size: large;
+    color: #DDD8C4;
+    float: left;
+}
+
+/* Style the header */
+header {
+	background-color: #50808E;
+	padding: 30px;
+	height: 85px;
+}
+
+
+/* Style the navigation menu */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+/* Style the navigation menu list items specifically */
+nav ul {
+display: none;
+}
+
+/* I Learnt the JS for how to build a hamburger menu for mobile view from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+When I didn't understand something, i then asked ChatGPT for help to explain https://chat.openai.com/ */
+
+/* Style the following tags when the screen width is minimum 768px */
+@media screen and (min-width: 768px) {
+	.menu-btn {
+	  display: none;
+	}
+	nav ul {
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  list-style: none;
+	}
+	nav li {
+	  margin: 0 20px;
+	}
+  }
+/* Style the navigation list differently when the screen is maximum 767px */
+  @media screen and (max-width: 767px) {
+	nav li {
+	  margin: 10px 0;
+	}
+  }
+
+/* Style the navigation list when it is shown */
+nav ul.show {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	right: 0;
+	background-color: #50808E;
+	z-index: 1;
+	padding: 10px;
+  }
+
+/* Style the navigation buttons and transition */
+nav a {
+color: #DDD8C4;
+text-decoration: none;
+transition: all 0.2s ease-in-out;
+}
+
+/* Style nav buttons on hover */
+nav a:hover {
+color: #FFFFFF;
+}
+
+/* Style the menu button */
+.menu-btn {
+	float: right;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+}
+
+/* Style the image for the menu button */
+.menu-btn img {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #50808E;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Style the banner section */
+#banner {
+	background-image: url('/images/1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: inset 0 -10px 30px rgba(0, 0, 0, 0.3);
+	background-attachment: fixed; /* Add this line */
+}
+
+#banner h2 {
+	font-size: 48px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+#banner p {
+	font-size: 24px;
+	color: black;
+	margin-bottom: 40px;
+}
+
+#banner .button {
+	padding: 15px 30px;
+	background-color: #DDD8C4;
+	color: #50808E;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  #banner .button:hover {
+	color: #FFFFFF;
+  }
+
+/* Style the about section */  
+#about {
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #DDD8C4;
+}
+/* Style the about section second header */  
+#about h2 {
+	font-size: 60px;
+	padding-bottom: 10px;
+}
+/* Style the about third level header */ 
+#about h3 {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+/* Style the about section image */ 
+/* I used resources on W3Schools to style as a circle https://www.w3schools.com/howto/howto_css_rounded_images.asp */
+#about img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin-bottom: 40px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+/* Style the about paragraph */ 
+#about p {
+	max-width: 800px;
+	text-align: center;
+	line-height: 1.8;
+}
+
+/* I used this resource on W3Schools to learn how to style the social links https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.social-media {
+	text-align: center;
+	padding-bottom: 50px;
+  }
+/* I used this resource on W3Schools to learn how to style the social links https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.social-media h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #DDD8C4;
+  }
+/* I used this resource on W3Schools to learn how to style the social links https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */  
+.social-media-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+/* I used this resource on W3Schools to learn how to style the social links https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */  
+.social-media-links a {
+	display: inline-block;
+	margin: 10px 10px;
+  }
+/* I used this resource on W3Schools to learn how to style the social links https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */  
+.social-media-links img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	object-fit: cover;
+    object-position: 10% 10%;
+  }
+  
+/* Style the footer and footer paragraph */
+footer {
+	background-color: #69A297;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+  }
+  
+footer p {
+	font-size: 14px;
+	margin: 0;
+  }
+  

@@ -1,14 +1,122 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Projects</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="profile-picture">
-          <img src="profile-picture.jpg" alt="Profile Picture
+<!-- HTML File Author: Tom Sargent
+Author email: tom.sargent@student.curtin.edu.au
+Date: 18/04/2023 -->
+
+<!DOCTYPE html> <!-- Define the document type as HTML -->
+<html lang="en"><!-- Define the document language as English -->
+<head>
+	<meta charset="UTF-8"> <!-- Define the character encoding as UTF-8 -->
+	<!-- The following was adapted from Michael Borck's Business Web and Mobile Style Guide (Blackboard)-->
+	<meta name="description" content="A Personal Portfolio For Tom Sargent, A New Web Designer"> 
+	<meta name="keywords" content="web technologies, web design, web skills, HTML5, CSS"> 
+	<meta name="author" content="Tom Sargent">
+	<title>Projects | Tom Sargent</title> <!-- Define the page title -->
+	<link rel="stylesheet" type="text/css" href="/styles/projects.css"> <!-- Link t the style sheet in the styles folder (CSS) -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body> <!-- Define the page body -->
+	<header> <!-- Define the page header -->
+		<nav> <!-- Define the page navigation bar -->
+			<div class="name"> <!-- create a div with the class "name" -->
+				<a href="index.html">Tom Sargent | A Personal Portfolio</a> <!-- Make a header title, that is linked to index.html -->
+			  </div>
+			<!-- I Learnt the JS for how to build a hamburger menu for mobile view from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+			When I didn't understand something, i then asked ChatGPT for help to explain https://chat.openai.com/ -->
+			<button class="menu-btn"> <!-- Define the menu button class for the CSS/JS associated with mobile Menu-->
+			<img src="images/menu.png" alt="Menu icon"> <!-- Define the image location for the menu item (with alt text)-->
+			</button>
+			<ul class="nav-links"> <!-- Create an unordered list for the navigation links -->
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="projects.html">Portfolio</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="reflection.html">Reflection</a></li>
+			</ul>
+		  </nav>
+	</header>
+	<section id="banner"> <!-- Define section and provide it id "Banner"-->
+		<h2>My Projects</h2>
+		<p>Below are some examples of my HTML, CSS and Javascript work to date!</p>
+	</section>
+	<!-- For all portfolio sections below I got HTML and CSS inspiration and code elements from https://www.w3schools.com/howto/howto_website_create_portfolio.asp-->
+	<!-- Where I didn't understand something or wanted more infomation I asked ChatGPT https://chat.openai.com/-->
+	<section id="portfolio"><!-- Define section and provide it id "portfolio"-->
+		<h2>Project list</h2>
+		<div class="project"> <!-- Within portfolio id, crease a div with class project (to be repeated)-->
+			<img src="images/p1.png" alt="Website Design Basic"> <!-- Link the image for the project-->
+			<h3>Website Design Basic</h3> <!-- Create header and content text -->
+			<h4>My First Website created in ISYS3004, I learnt what HTML 5 is and basic CSS styling.</h4>
+			<p>Technolgoies Used: HTMl 5</p>
+			<a href="/Projects/COMPLETE-WebDesign0/index.html" class="button">View project Live (Netify)</a> <!-- Create a button linking to the project hosted within this site -->
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20WebDesign0/" class="button">View project Live (Github)</a> <!-- create a button linking to github hosting -->
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+		<div class="project">
+			<img src="images/p2.png" alt="Website Design With CSS">
+			<h3>Website Design With CSS</h3>
+			<h4>My Second Website created in ISYS3004, I learnt more HTML 5 is and more advanced CSS styling.</h4>
+			<p>Technolgoies Used: HTMl 5, CSS</p>
+			<a href="/Projects/COMPLETE-WebDesign2/index.html" class="button">View project Live (Netify)</a>
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20WebDesign2/" class="button">View project Live (Github)</a>
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+		<div class="project">
+			<img src="images/p3.png" alt="Website Design With CSS">
+			<h3>Website Design With More CSS</h3>
+			<h4>My Third Website created in ISYS3004, I learnt more HTML 5 is and More Advanced CSS styling.</h4>
+			<p>Technolgoies Used: HTMl 5, CSS</p>
+			<a href="/Projects/COMPLETE-WebDesign3/index.html" class="button">View project Live (Netify)</a>
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20Web%20Design%203/" class="button">View project Live (Github)</a>
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+		<div class="project">
+			<img src="images/rps.png" alt="Rock Paper Scissors Website">
+			<h3>Rock Paper Scissors</h3>
+			<h4>In this project I learnt about Javascript and creating an interactive web app.</h4>
+			<p>Technolgoies Used: HTMl 5, CSS, Javascript</p>
+			<a href="/Projects/COMPLETE-RPS/RPS.html" class="button">View project Live (Netify)</a>
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20RPS/" class="button">View project Live (Github)</a>
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+		<div class="project">
+			<img src="images/flatland.png" alt="Flatland Website">
+			<h3>Flatland</h3>
+			<h4>Flatland is constructed as a business buzzword generator..</h4>
+			<p>Technolgoies Used: HTMl 5, CSS, Javascript</p>
+			<a href="/Projects/COMPLETE-Flatland/index.html" class="button">View project Live (Netify)</a>
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20Flatland/" class="button">View project Live (Github)</a>
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+		<div class="project">
+			<img src="images/todo.png" alt="Todo Website">
+			<h3>To Do List</h3>
+			<h4>I made an interactive to do list on HTML, with basic styling and javascript.</h4>
+			<p>Technolgoies Used: HTMl 5, CSS, Javascript</p>
+			<a href="/Projects/COMPLETE-todo_list_MVP/index.html" class="button">View project Live (Netify)</a>
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20todo_list_MVP/" class="button">View project Live (Github)</a>
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+		<div class="project">
+			<img src="images/rss.png" alt="RSS Feeder Website">
+			<h3>RSS Feeder</h3>
+			<h4>I made an interactive to do list on HTML, with basic styling and javascript.</h4>
+			<p>Technolgoies Used: HTMl 5, CSS, Javascript</p>
+			<a href="/Projects/COMPLETE-RSS/index.html" class="button">View project Live (Netify)</a>
+			<a href="https://toms201.github.io/ISYS3004/FINAL%20-%20Used%20In%20Assesment%20(Edited%20in%20VS%20desktop%20and%20uploaded)/COMPLETE%20-%20RSS/index.html" class="button">View project Live (Github)</a>
+			<a href="https://github.com/Toms201/ISYS3004" class="button">View project Github Repo</a>
+		</div>
+	</section>
+	<footer>
+		<p>&copy; 2023 Tom Sargent. All rights reserved.</p>
+			<p>Last Updated 18/5/2023</p>
+				<p> <!-- The following CSS Styles approved image and HTML code has been used from http://jigsaw.w3.org/css-validator/check/referer -->
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">
+						<img style="border:0;width:88px;height:31px"
+							src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+							alt="Valid CSS!">
+					</a>	
+		</p>	
+	</footer>
+	<script src="script.js"></script> <!-- Define the link to the JS file -->
+</body>
+</html>

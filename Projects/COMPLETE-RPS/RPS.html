@@ -1,0 +1,27 @@
+<!-- 
+  HTML Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Borck in Curtin Universities ISYS3004 - Business Web and Mobile Technologies. Semester 1 2023.
+  Description: The HTML for a rock paper scissors web app/game.
+-->
+<!DOCTYPE html>  <!-- This declares the document type as HTML5 -->
+<html lang="en"> <!-- This declares the language as english -->
+<head>
+  <meta charset="UTF-8">  <!-- Define character encoding as UTF-8 -->
+  <title>Rock, Paper, Scissors</title>  <!-- Define Webpage Title -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Define CSS location -->
+</head>
+
+<body>
+  <h1>Rock, Paper or Scissors?</h1> <!-- Define first header -->
+  <p> 
+    <span class="circle" onclick="play('rock')">R</span> <!-- use span to group inline elements of circles and when clicked "play" from the javascript -->
+    <span class="circle" onclick="play('paper')">P</span> 
+    <span class="circle" onclick="play('scissors')">S</span>
+    </p>
+  <a class="instruction" 
+  href="https://en.wikipedia.org/wiki/Rock_paper_scissors">RULES</a> <!-- Reference to game instructions link -->
+
+  <script src="script.js"></script> <!-- Link to javascript file -->
+</body>
+</html>

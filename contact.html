@@ -1,0 +1,81 @@
+<!-- HTML File Author: Tom Sargent
+Author email: tom.sargent@student.curtin.edu.au
+Date: 18/04/2023 -->
+
+<!DOCTYPE html> <!-- Define the document type as HTML -->
+<html lang="en"><!-- Define the document language as English -->
+<head>
+	<meta charset="UTF-8"> <!-- Define the character encoding as UTF-8 -->
+	<!-- The following was adapted from Michael Borck's Business Web and Mobile Style Guide (Blackboard)-->
+	<meta name="description" content="A Personal Portfolio For Tom Sargent, A New Web Designer"> 
+	<meta name="keywords" content="web technologies, web design, web skills, HTML5, CSS"> 
+	<meta name="author" content="Tom Sargent">
+	<title>Contact | Tom Sargent</title> <!-- Define the page title -->
+	<link rel="stylesheet" type="text/css" href="/styles/contact.css"> <!-- Link t the style sheet in the styles folder (CSS) -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body> <!-- Define the page body -->
+	<header> <!-- Define the page header -->
+		<nav> <!-- Define the page navigation bar -->
+			<div class="name"> <!-- create a div with the class "name" -->
+				<a href="index.html">Tom Sargent | A Personal Portfolio</a> <!-- Make a header title, that is linked to index.html -->
+			  </div>
+			<!-- I Learnt the JS for how to build a hamburger menu for mobile view from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+			When I didn't understand something, i then asked ChatGPT for help to explain https://chat.openai.com/ -->
+			<button class="menu-btn"> <!-- Define the menu button class for the CSS/JS associated with mobile Menu-->
+			<img src="images/menu.png" alt="Menu icon"> <!-- Define the image location for the menu item (with alt text)-->
+			</button>
+			<ul class="nav-links"> <!-- Create an unordered list for the navigation links -->
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="projects.html">Portfolio</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="reflection.html">Reflection</a></li>
+			</ul>
+		  </nav>
+	</header>
+    <section id="banner">
+		<h2>Contact Me!</h2>
+		<p>Have a project you would like a Web Designer for? Contact me now!</p>
+	</section>
+    <section class="contact-container">
+        <h5>T</h5>
+		<section class="get-in-touch"> <!-- Create a get in touch section seperate to the contact form so I can split in CSS-->
+			<h2>Get In Touch</h2>
+            <p><strong>Name:</strong> Tom Sargent</p>
+			<p><strong>Phone:</strong> 0400000000</p>
+			<p><strong>Email:</strong> tom.sargent@student.curtin.edu.au</p>
+			<p><strong>Address:</strong> Perth, Western Australia</p>
+		</section>
+		<!-- I used the resource https://www.w3schools.com/howto/howto_css_contact_form.asp to discover the best way to make the contact us form below -->
+		<section class="contact-form">
+			<h2>Contact Me</h2>
+			<form action="#" method="post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="phone" required>
+				<label for="project-title">Project Title</label>
+				<input type="text" id="project-title" name="project-title" required>
+				<label for="description">Description</label>
+				<textarea id="description" name="description" required></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</section>
+	<footer>
+		<p>&copy; 2023 Tom Sargent. All rights reserved.</p>
+			<p>Last Updated 18/5/2023</p>
+				<p> <!-- The following CSS Styles approved image and HTML code has been used from http://jigsaw.w3.org/css-validator/check/referer -->
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">
+						<img style="border:0;width:88px;height:31px"
+							src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+							alt="Valid CSS!">
+					</a>	
+		</p>	
+	</footer>
+	<script src="script.js"></script> <!-- Define the link to the JS file -->
+</body>
+</html>

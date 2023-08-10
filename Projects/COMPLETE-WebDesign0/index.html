@@ -1,0 +1,78 @@
+<!-- 
+  HTML Document Creator - Tom Sargent
+  Last Edited Date - 17/04/2023
+  Work adapted from Michael Bork in Curtin Universities ISYS3004 - Business Web and Mobile Technologies. Semester 1 2023.
+  Description: A very basic HTML website with included CSS styling (rather than separate).
+-->
+<!DOCTYPE html> <!-- Define doctype -->
+<html lang="en"> <!-- Define language as english -->
+	<head>
+		<meta charset=UTF-8> <!-- Define character encoding as UTF-8 -->
+		<title>Web Page Design</title> <!-- Define webpage title -->
+		<style>	/* This is how you define a style sheet within a HTML Document */
+			body	{	
+						background-color:	lightblue; /* Set background colour */
+			}
+			h1	{	
+						color:	blue;	/* Set heading one colour */
+						text-align:	center;	/* align text center */
+			}	
+			p	{	
+						color:	red;/* set paragraph colour red */
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		<h1 style="color:blue; text-align: center;">Web Page Design</h1> <!-- This is how you would define CSS styling within the HTML -->
+		<nav> <!-- Define navigation bar and headings/links -->
+			<a href="about.html">About</a>
+			<a href="#featured">The	Idea</a>
+			<a href="#content">Content</a>	
+			<a href="#images">Images</a>
+			<a href="#extras">Extras</a>
+		</nav>
+		</header>
+
+		<section id="featured"> <!-- Define the section "featured" -->
+		<h2>The Idea</h2><!-- Define the second level heading -->
+
+		<p>Okay, so you have an idea for a website or an assignment due for Business Web Technologies.
+		You want to make it look <strong> professional </strong> <!-- This is how you BOLD text (with the strong tag)--> and easy to use.</p>
+
+		<p>What is the first thing you need to work on?</p> <!-- This is a paragraph -->
+		</section>
+
+		<section id="content"> <!-- Define the section "content" -->
+		<h2>Content</h2>
+		
+		<p style="color:red"> Content is the most important element of a website. Written content, makes up for
+		more than 90% of the Web</p> <!-- Add some internal CSS to a paragraph specifically-->
+
+		<p>The aim of design is to enhance the presentation of the content! Styling content
+		will go a long way.</p>
+		</section>
+
+		<section id="images"> <!-- Define the section "images" -->
+		<h2>images</h2>     <!-- Define the image source (src) Width, alternative text for accessible reading and the link to source (href)-->
+		<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="200" alt="html5 with arms">
+		<p> Image Source: <a href="https://en.wikipedia.org/wiki/HTML5">Wikipedia HTML5 Logo</a> </p>
+		</section>
+
+		<footer id="extras"> <!-- Define the image source (src) Width, alternative text for accessible reading and the link to source (href)-->
+			<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> <!-- Define the Creative Commons License -->
+				<img alt="Creative Commons License" style="border-width:0"
+				src="https://i.creativecommons.org/l/by/4.0/88x31.png" ></a>
+					<br>This work is licensed under a 
+					<a rel="license"
+					href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+			<p> <!-- The following W3C code was provided by W3C CSS validator https://jigsaw.w3.org/css-validator/validator-->
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					<img style="border:0;width:88px;height:31px"
+						src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+						alt="Valid CSS!">
+					</a>
+				</p>
+		</footer>
+	</body>
+</html>
